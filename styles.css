@@ -210,3 +210,60 @@ nav li:first-child{
     margin-top: 20px; /* Add margin for spacing */
   }
 }
+
+/* ABOUT */
+.about-section {
+  background-color: #fffce9;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 80%;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px; /* Add rounded corners */
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 60px;
+}
+
+.about-text h3 {
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .about-content {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .about-image img {
+    max-width: 100%; /* Take up full width on mobile */
+    margin-right: 0; /* Remove margin on mobile */
+    margin-bottom: 20px; /* Add spacing between image and text on mobile */
+  }
+}
