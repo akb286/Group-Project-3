@@ -379,3 +379,130 @@ p {
     margin-bottom: 20px; /* Space between cards */
   }
 }
+
+/* HOURS */
+.hours-section {
+  background-color: #fffce9;
+  padding: 50px 0;
+}
+
+.hours-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hours-content {
+  display: flex;
+  align-items: center;
+}
+
+.hours-image img {
+  max-width: 80%;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px; /* Add rounded corners */
+}
+
+.hours-text {
+  flex: 1;
+}
+
+.hours-text h2 {
+  font-size: 60px;
+}
+
+.hours-text h3 {
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+
+.hours-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.experience {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .hours-content {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .hours-image img {
+    max-width: 100%; /* Take up full width on mobile */
+    margin-right: 0; /* Remove margin on mobile */
+    margin-bottom: 20px; /* Add spacing between image and text on mobile */
+  }
+}
+
+/* EXPERIENCE */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap into multiple rows */
+  justify-content: center; /* Center cards horizontally */
+  gap: 10px; /* Adjust spacing between cards */
+  margin: 20px auto;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(25% - 10px); /* Adjust width for four cards in one row with spacing */
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.description {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.description p {
+  margin: 0; /* Remove default margin */
+}
+
+.quote {
+  color: white;
+}
+/* BOTTOM BAR */
+.bottom-bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.bottom-bar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.bottom-bar p {
+  color: white;
+  margin: 0;
+  font-size: 14px;
+  display: inline; /* or display: inline-block; */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
