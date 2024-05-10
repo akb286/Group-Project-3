@@ -25,7 +25,7 @@ nav{
 }
 
 .logo img {
-  width: 15%; /* Default size */
+  width: 155px;
 }
 
 nav ul{
@@ -58,6 +58,22 @@ nav a:hover{
 nav li:first-child{
   margin-right: auto;
 }
+
+.menu-button img {
+  width: 26px; 
+  height: 26px; 
+}
+
+.menu-icon {
+  width: 26px; /* Adjust the width of the image as needed */
+  height: 26px; /* Adjust the height of the image as needed */
+  object-fit: contain; /* Maintain aspect ratio and fit the image within the specified dimensions */
+}
+.menu-link {
+  text-align: left; /* Left-align the content within the link */
+}
+
+
 .sidebar{
   position: fixed;
   top: 0; 
@@ -310,6 +326,7 @@ img {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  flex: 1; /* Allow the image to grow within its container */
 }
 
 h3,
@@ -317,6 +334,7 @@ p {
   text-align: left;
   color: black;
   padding: 0 5px;
+  margin: 0; /* Remove default margin */
 }
 
 p {
@@ -326,19 +344,27 @@ p {
 }
 
 .btn {
-/*   display: block; */
   background-color: black;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 25px;
   transition: background-color 0.3s;
-  margin-top: 0px;
+  margin-top: auto; /* Push the button to the bottom */
+  margin-bottom: 20px; /* Add more white space under the button */
+  display: inline-block; /* Make the button inline-block */
 }
 
 .btn:hover {
   background-color: #333;
 }
+
+.button-container {
+  margin-bottom: 10px; /* Add some space between buttons and text */
+}
+
+
+
 .outlined-btn {
   display: inline-block;
   font-size: 12px;
@@ -356,9 +382,6 @@ p {
   color: black; /* Change text color on hover */
 }
 
-.button-container {
-  margin-bottom: 10px; /* Add some space between buttons and text */
-}
 
 /* Media query for mobile responsiveness */
 @media only screen and (min-width: 600px) {
