@@ -299,6 +299,7 @@ nav li:first-child{
   width: 920px;
   height: auto;
   margin: 30px auto;
+  margin-bottom: 0px;
 }
 h1 {
   color: white;
