@@ -2,6 +2,7 @@
 body {
   background-color: white;
   font-family: 'Oswald';font-size: 16px;
+  text-decoration: none;
 }
 
 .home-page {
@@ -295,12 +296,14 @@ nav li:first-child{
 }
 
 .coffee-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 920px;
   height: auto;
   margin: 30px auto;
   margin-bottom: 0px;
 }
+
 h1 {
   color: white;
   font-size: 66px;
@@ -329,9 +332,17 @@ img {
   border-top-right-radius: 10px;
   flex: 1; /* Allow the image to grow within its container */
 }
+a {
+  text-decoration: none;
+}
+h4 {
+  margin-left: 5px;
+  color: black;
+}
 
 h3,
 p {
+  text-decoration: none;
   text-align: left;
   color: black;
   padding: 0 5px;
@@ -344,6 +355,7 @@ p {
   text-decoration: none;
 }
 
+
 .btn {
   background-color: black;
   color: white;
@@ -354,6 +366,7 @@ p {
   margin-top: auto; /* Push the button to the bottom */
   margin-bottom: 20px; /* Add more white space under the button */
   display: inline-block; /* Make the button inline-block */
+  width: 50%;
 }
 
 .btn:hover {
@@ -385,6 +398,7 @@ p {
 
 
 /* Media query for mobile responsiveness */
+
 @media only screen and (min-width: 600px) {
   .coffee-container {
     display: flex;
@@ -408,6 +422,8 @@ p {
     margin-bottom: 20px; /* Space between cards */
   }
 }
+
+
 
 /* HOURS */
 .hours-section {
